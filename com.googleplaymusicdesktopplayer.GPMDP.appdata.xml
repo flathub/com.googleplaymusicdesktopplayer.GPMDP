@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.googleplaymusicdesktopplayer.GPMDP.desktop</id>
+  <name>Google Play Music Desktop Player</name>
+  <project_license>MIT</project_license>
+  <developer_name>Samuel Attard</developer_name>
+  <summary>Run Google Play Music as a standalone desktop app</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <url type="homepage">https://www.googleplaymusicdesktopplayer.com/</url>
+  <description>
+    <p>
+      Run Google Play Music as a standalone desktop app. Never again will you
+      have to hunt through your tabs to pause your music, or stop listening to
+      your favourite song because Chrome is guzzling up all your RAM..
+    </p>
+    <p>
+      No affiliation with Google. Google Play is a trademark of Google Inc.
+    </p>
+  </description>
+  <releases>
+    <release version="4.4.1" date="2017-08-28"/>
+  </releases>
+  <update_contact>tingping_AT_fedoraproject.org</update_contact>
+</component>

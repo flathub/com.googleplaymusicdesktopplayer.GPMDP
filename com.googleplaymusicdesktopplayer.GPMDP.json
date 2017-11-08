@@ -1,0 +1,77 @@
+{
+  "app-id": "com.googleplaymusicdesktopplayer.GPMDP",
+  "branch": "stable",
+  "base": "io.atom.electron.BaseApp",
+  "base-version": "stable",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.6",
+  "sdk": "org.freedesktop.Sdk",
+  "command": "google-play-music-desktop-player",
+  "rename-desktop-file": "google-play-music-desktop-player.desktop",
+  "rename-icon": "google-play-music-desktop-player",
+  "separate-locales": false,
+  "finish-args": [
+      "--share=ipc", "--socket=x11",
+      "--socket=pulseaudio",
+      "--share=network",
+      "--device=dri",
+
+      "--talk-name=org.freedesktop.Notifications",
+
+      "--env=XDG_CURRENT_DESKTOP=Unity",
+      "--talk-name=com.canonical.indicator.application",
+      "--talk-name=org.kde.StatusNotifierWatcher",
+
+      "--own-name=org.mpris.MediaPlayer2.google-play-music-desktop-player",
+
+      "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
+      "--talk-name=org.mate.SettingsDaemon.MediaKeys"
+    ],
+  "modules": [
+    {
+      "name": "GPMDP",
+      "buildsystem": "simple",
+      "build-commands": [
+        "ar x gpmdp.deb",
+        "tar -xf data.tar.xz",
+        "cp -r usr/* /app",
+        "mkdir -p /app/share/icons/hicolor/512x512/apps",
+        "mv /app/share/pixmaps/google-play-music-desktop-player.png /app/share/icons/hicolor/512x512/apps/",
+        "mv /app/bin/google-play-music-desktop-player /app/bin/gpmdp",
+        "install google-play-music-desktop-player /app/bin",
+        "install -Dm644 com.googleplaymusicdesktopplayer.GPMDP.appdata.xml /app/share/appdata/com.googleplaymusicdesktopplayer.GPMDP.appdata.xml"
+      ],
+      "cleanup": [
+        "/share/lintian",
+        "/share/pixmaps"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "only-arches": ["x86_64"],
+          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.4.1/google-play-music-desktop-player_4.4.1_amd64.deb",
+          "sha256": "fcb6c7279e2fcc7998785e9b72dac1950c6d248e9bbee1ff705d1a191f570f4b",
+          "dest-filename": "gpmdp.deb"
+        },
+        {
+          "type": "file",
+          "only-arches": ["i386"],
+          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.4.1/google-play-music-desktop-player_4.4.1_i386.deb",
+          "sha256": "a2142f504cf43ce9c44f89797134b5aa8dc0402b123f3e22ed4e4fb0837ee967",
+          "dest-filename": "gpmdp.deb"
+        },
+        {
+          "type": "file",
+          "path": "com.googleplaymusicdesktopplayer.GPMDP.appdata.xml"
+        },
+        {
+          "type": "script",
+          "dest-filename": "google-play-music-desktop-player",
+          "commands": [
+            "exec env TMPDIR=$XDG_CACHE_HOME /app/bin/gpmdp \"$@\""
+          ]
+        }
+      ]
+    }
+  ]
+}
