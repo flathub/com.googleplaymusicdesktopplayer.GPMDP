@@ -50,15 +50,15 @@
         {
           "type": "file",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.6.0/google-play-music-desktop-player_4.6.0_amd64.deb",
-          "sha256": "fc6d01d830ad6e3caa4d313b6d7db6ab74d42100cc9e0abccc426370db3956be",
+          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.6.1/google-play-music-desktop-player_4.6.1_amd64.deb",
+          "sha256": "4f48764eacd28370c3fadfc99540d62f9de78dfe3a5f566d6a296606bb13d637",
           "dest-filename": "gpmdp.deb"
         },
         {
           "type": "file",
           "only-arches": ["i386"],
-          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.6.0/google-play-music-desktop-player_4.6.0_i386.deb",
-          "sha256": "dbdecdda1764eaf1c281ef9d41d93c155c893485913c18c6675b95cf8c7650e3",
+          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.6.1/google-play-music-desktop-player_4.6.1_i386.deb",
+          "sha256": "061a89259d5b49f13e9bd61a51a0cddc6d2cd853be27820780a48e25cb131540",
           "dest-filename": "gpmdp.deb"
         },
         {
