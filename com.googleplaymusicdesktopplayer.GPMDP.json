@@ -2,9 +2,9 @@
   "app-id": "com.googleplaymusicdesktopplayer.GPMDP",
   "branch": "stable",
   "base": "io.atom.electron.BaseApp",
-  "base-version": "stable",
+  "base-version": "18.08",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "1.6",
+  "runtime-version": "18.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "google-play-music-desktop-player",
   "rename-desktop-file": "google-play-music-desktop-player.desktop",
@@ -24,7 +24,6 @@
 
       "--own-name=org.mpris.MediaPlayer2.google-play-music-desktop-player",
 
-      "--talk-name=org.gnome.SettingsDaemon",
       "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
       "--talk-name=org.mate.SettingsDaemon"
     ],
