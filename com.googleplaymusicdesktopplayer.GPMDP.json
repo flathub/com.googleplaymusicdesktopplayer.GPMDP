@@ -70,7 +70,7 @@
           "type": "script",
           "dest-filename": "google-play-music-desktop-player",
           "commands": [
-            "ln -s discord/ipc-0 $XDG_RUNTIME_DIR/discord-ipc-0",
+            "for i in {0..9}; do test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf discord/ipc-$i $XDG_RUNTIME_DIR/discord-ipc-$i ; done",
             "exec env TMPDIR=$XDG_CACHE_HOME /app/bin/gpmdp \"$@\""
           ]
         }
