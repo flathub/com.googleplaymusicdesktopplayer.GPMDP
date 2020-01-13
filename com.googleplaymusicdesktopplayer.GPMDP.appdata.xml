@@ -4,12 +4,12 @@
   <name>Google Play Music Desktop Player</name>
   <project_license>MIT</project_license>
   <developer_name>Samuel Attard</developer_name>
-  <summary>Run Google Play Music as a standalone desktop app</summary>
+  <summary>Run Google Play Music (or Youtube Music) as a standalone desktop app</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://www.googleplaymusicdesktopplayer.com/</url>
   <description>
     <p>
-      Run Google Play Music as a standalone desktop app. Never again will you
+      Run Google Play Music (or Youtube Music) as a standalone desktop app. Never again will you
       have to hunt through your tabs to pause your music, or stop listening to
       your favourite song because Chrome is guzzling up all your RAM..
     </p>
