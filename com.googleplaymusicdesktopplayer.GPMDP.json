@@ -7,8 +7,6 @@
   "runtime-version": "18.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "google-play-music-desktop-player",
-  "rename-desktop-file": "google-play-music-desktop-player.desktop",
-  "rename-icon": "google-play-music-desktop-player",
   "separate-locales": false,
   "finish-args": [
       "--share=ipc", "--socket=x11",
@@ -39,7 +37,6 @@
         "cp -r usr/* /app",
         "mkdir -p /app/share/icons/hicolor/1024x1024/apps",
         "cp /app/share/pixmaps/google-play-music-desktop-player.png /app/share/icons/hicolor/1024x1024/apps/",
-        "cp /app/share/pixmaps/google-play-music-desktop-player.png /app/share/icons/hicolor/1024x1024/apps/com.googleplaymusicdesktopplayer.GPMDP",
         "mv /app/bin/google-play-music-desktop-player /app/bin/gpmdp",
         "install google-play-music-desktop-player /app/bin",
         "install -Dm644 com.googleplaymusicdesktopplayer.GPMDP.appdata.xml /app/share/appdata/com.googleplaymusicdesktopplayer.GPMDP.appdata.xml"
