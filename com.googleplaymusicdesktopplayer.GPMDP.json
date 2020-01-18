@@ -25,8 +25,7 @@
 
       "--filesystem=xdg-run/discord:create",
 
-      "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
-      "--talk-name=org.mate.SettingsDaemon"
+      "--talk-name=org.gnome.SettingsDaemon.MediaKeys"
     ],
   "modules": [
     {
