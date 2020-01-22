@@ -21,7 +21,7 @@
       "--talk-name=com.canonical.indicator.application",
       "--talk-name=org.kde.StatusNotifierWatcher",
 
-      "--own-name=org.mpris.MediaPlayer2.google-play-music-desktop-player",
+      "--own-name=org.mpris.MediaPlayer2.google_play_music_desktop_player",
 
       "--filesystem=xdg-run/discord:create",
 
