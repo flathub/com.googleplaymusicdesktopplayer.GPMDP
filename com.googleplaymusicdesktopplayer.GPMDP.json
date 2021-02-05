@@ -10,7 +10,8 @@
   "rename-desktop-file": "google-play-music-desktop-player.desktop",
   "separate-locales": false,
   "finish-args": [
-      "--share=ipc", "--socket=x11",
+      "--share=ipc",
+      "--socket=x11",
       "--socket=pulseaudio",
       "--share=network",
       "--device=dri",
