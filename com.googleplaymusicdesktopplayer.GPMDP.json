@@ -56,13 +56,6 @@
         },
         {
           "type": "file",
-          "only-arches": ["i386"],
-          "url": "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.7.1/google-play-music-desktop-player_4.7.1_i386.deb",
-          "sha256": "bf2ef3b1c642823825f0916616fc8afeab693a2157d79ffccc9891e9f44fd458",
-          "dest-filename": "gpmdp.deb"
-        },
-        {
-          "type": "file",
           "path": "com.googleplaymusicdesktopplayer.GPMDP.appdata.xml"
         },
         {
